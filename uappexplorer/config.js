@@ -6,7 +6,7 @@ var webappUrl = "https://uappexplorer.com/"
 
 // the the pattern that defines which links are considered
 // local and which are opened in an external browser (required)
-var webappUrlPattern = "https?://uappexplorer.com/*"
+var webappUrlPattern = "https?://uappexplorer.com/*,https://login.ubuntu.com/*"
 
 // a user agent override (optional)
 var webappUA = "Mozilla/5.0 (Linux; Android 5.0; Nexus 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36 Ubuntu Touch Webapp"
