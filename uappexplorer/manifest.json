@@ -3,13 +3,14 @@
     "description": "Discover apps for you Ubuntu Touch device",
     "architecture": "all",
     "title": "uApp Explorer",
-    "version": "2.2",
+    "version": "2.3",
     "maintainer": "Brian Douglass <bhdouglass@gmail.com>",
     "framework": "ubuntu-sdk-14.10",
     "hooks": {
         "uappexplorer": {
             "apparmor": "app.json",
-            "desktop": "app.desktop"
+            "desktop": "app.desktop",
+            "urls": "app.url-dispatcher"
         }
     }
 }

@@ -34,3 +34,5 @@ Makefile*
 *.qmlproject.user.*
 
 build-uappexplorer-*
+*.click
+.vagrant
