@@ -1,6 +1,5 @@
-import QtQuick 2.0
-import QtFeedback 5.0
-import Ubuntu.Components 1.1
+import QtQuick 2.4
+import Ubuntu.Components 1.3
 import QtGraphicalEffects 1.0
 
 Item {
@@ -21,16 +20,6 @@ Item {
     property real actionButtonDistance: 1.5* hintSize
 
     anchors.fill: parent
-
-    HapticsEffect {
-        id: clickEffect
-        attackIntensity: 0.0
-        attackTime: 50
-        intensity: 1.0
-        duration: 10
-        fadeTime: 50
-        fadeIntensity: 0.0
-    }
 
     Rectangle {
         id: bgVisual
@@ -143,7 +132,6 @@ Item {
                     anchors.fill: parent
                     enabled: modelData.enabled
                     onClicked: {
-                        clickEffect.start()
                         bottomEdgeHint.state = "collapsed"
                         modelData.triggered(null)
                     }

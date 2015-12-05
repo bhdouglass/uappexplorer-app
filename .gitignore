@@ -36,3 +36,4 @@ Makefile*
 build-uappexplorer-*
 *.click
 .vagrant
+.ubuntu-sdk-deploy/

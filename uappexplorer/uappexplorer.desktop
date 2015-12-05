@@ -2,7 +2,7 @@
 Name=uApp Explorer
 Comment=Webapp for uApp Explorer
 Type=Application
-Icon=icon.png
+Icon=uappexplorer.png
 Exec=qmlscene %u qml/Main.qml
 Terminal=false
 X-Ubuntu-Touch=true
