@@ -1,8 +1,4 @@
 {
-  "package": "uappexplorer.bhdouglass",
-  "app": "uappexplorer",
-  "sdk": "ubuntu-sdk-15.04",
-  "arch": "armhf",
   "template": "pure",
   "ignore": [
     "screenshots",
