@@ -7,7 +7,7 @@ cd build/donate
 
 sed -i 's/uappexplorer.bhdouglass/uappexplorer-donate.bhdouglass/g' clickable.json
 sed -i 's/uappexplorer.bhdouglass/uappexplorer-donate.bhdouglass/g' manifest.json
-sed -i 's/uappexplorer.bhdouglass/uappexplorer-donate.bhdouglass/g' src/Main.qml
+sed -i 's/uappexplorer.bhdouglass/uappexplorer-donate.bhdouglass/g' qml/Main.qml
 mv data/uappexplorer-donate.png data/uappexplorer.png
 
 clickable clean build click-build
