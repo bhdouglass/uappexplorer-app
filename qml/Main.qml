@@ -1,8 +1,8 @@
 import QtQuick 2.4
-import QtPurchasing 1.0
+//import QtPurchasing 1.0
 import Ubuntu.Web 0.2
-import Ubuntu.Components 1.2
-import Ubuntu.Components.Popups 1.2
+import Ubuntu.Components 1.3
+import Ubuntu.Components.Popups 1.3
 import com.canonical.Oxide 1.0 as Oxide
 import 'UCSComponents'
 
@@ -28,6 +28,11 @@ MainView {
         }
         width: parent.width
         height: parent.height
+
+        header: PageHeader {
+            id: header
+            visible: false
+        }
 
         WebContext {
             id: webcontext
@@ -103,15 +108,6 @@ MainView {
                 },
 
                 RadialAction {
-                    id: reload
-                    text: qsTr('Reload')
-                    iconName: 'reload'
-                    onTriggered: {
-                        webview.reload();
-                    }
-                },
-
-                RadialAction {
                     id: forward
                     text: qsTr('Forward')
                     iconName: 'go-next'
@@ -122,6 +118,15 @@ MainView {
                 },
 
                 RadialAction {
+                    id: reload
+                    text: qsTr('Reload')
+                    iconName: 'reload'
+                    onTriggered: {
+                        webview.reload();
+                    }
+                },
+
+                RadialAction {
                     id: back
                     text: qsTr('Back')
                     iconName: 'go-previous'
@@ -129,21 +134,21 @@ MainView {
                     onTriggered: {
                         webview.goBack();
                     }
-                },
+                }
 
-                RadialAction {
+                /*RadialAction {
                     id: donate
                     text: qsTr('Donate')
                     iconName: 'like'
                     onTriggered: {
                         PopupUtils.open(donationComponent)
                     }
-                }
+                }*/
             ]
         }
     }
 
-    Component {
+    /*Component {
         id: donationComponent
 
         Dialog {
@@ -258,7 +263,7 @@ MainView {
                 transaction.finalize();
             }
         }
-    }
+    }*/
 
     Connections {
         target: Qt.inputMethod

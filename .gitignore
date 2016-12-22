@@ -37,3 +37,4 @@ build-uappexplorer-*
 *.click
 .vagrant
 .ubuntu-sdk-deploy/
+build

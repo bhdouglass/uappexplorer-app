@@ -1,0 +1,16 @@
+{
+    "name": "uappexplorer.bhdouglass",
+    "description": "Discover apps for your Ubuntu Touch device",
+    "architecture": "all",
+    "title": "uApp Explorer",
+    "version": "3.01",
+    "maintainer": "Brian Douglass <bhdouglass@gmail.com>",
+    "framework": "ubuntu-sdk-15.04.7",
+    "hooks": {
+        "uappexplorer": {
+            "apparmor": "data/uappexplorer.apparmor",
+            "desktop": "data/uappexplorer.desktop",
+            "urls": "data/uappexplorer.url-dispatcher"
+        }
+    }
+}

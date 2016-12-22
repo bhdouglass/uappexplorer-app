@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=uApp Explorer
-Comment=Webapp for uApp Explorer
+Comment=Discover apps for your Ubuntu Touch device
 Type=Application
-Icon=uappexplorer.png
+Icon=data/uappexplorer.png
 Exec=qmlscene %u qml/Main.qml
 Terminal=false
 X-Ubuntu-Touch=true
