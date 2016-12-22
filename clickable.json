@@ -3,5 +3,10 @@
   "app": "uappexplorer",
   "sdk": "ubuntu-sdk-15.04",
   "arch": "armhf",
-  "template": "pure"
+  "template": "pure",
+  "ignore": [
+    "screenshots",
+    "build-donate.sh",
+    "uappexplorer-donate.png"
+  ]
 }
