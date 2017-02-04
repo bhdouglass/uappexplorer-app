@@ -4,8 +4,8 @@ import Ubuntu.Components 1.3
 Action {
     property string iconName: "add"
     property string iconSource
-    property color iconColor: "Black"
-    property color backgroundColor: "White"
+    property color iconColor: "#000000"
+    property color backgroundColor: "#FFFFFF"
     property string text
     property bool top: false
     property bool enabled: true
