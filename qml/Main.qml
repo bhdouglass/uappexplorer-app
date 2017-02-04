@@ -2,7 +2,7 @@ import QtQuick 2.4
 //import QtPurchasing 1.0
 import Ubuntu.Web 0.2
 import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+//import Ubuntu.Components.Popups 1.3
 import com.canonical.Oxide 1.0 as Oxide
 import 'UCSComponents'
 
@@ -279,6 +279,12 @@ MainView {
         target: UriHandler
         onOpened: {
             webview.url = uris[0];
+        }
+    }
+
+    Component.onCompleted: {
+        if (Qt.application.arguments[1] && Qt.application.arguments[1].indexOf('uappexplorer.com') >= 0) {
+            webview.url = Qt.application.arguments[1];
         }
     }
 }

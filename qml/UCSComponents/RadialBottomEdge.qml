@@ -6,8 +6,8 @@ Item {
     id: bottomEdge
 
     property int hintSize: units.gu(8)
-    property color hintColor: Theme.palette.normal.overlay
-    property string hintIconName: "view-grid-symbolic"
+    property color hintColor: "#FFFFFF"
+    property string hintIconName: "go-up"
     property alias hintIconSource: hintIcon.source
     property color hintIconColor: UbuntuColors.coolGrey
     property bool bottomEdgeEnabled: true
